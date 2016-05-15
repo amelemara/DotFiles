@@ -202,8 +202,10 @@ bindsym $mod+d exec rofi -show run -lines 7 -eh 2 -width 100 -padding 400 -opaci
 # startup
 exec compton -f
 
-exec xrandr --output eDP1 --mode "2048x1152_60.00"
+
+# exec xrandr --output eDP1 --mode "2048x1152_60.00"
 
 
 # always on
+exec_always setxkbmap -option caps:swapescape
 exec_always feh --bg-scale /home/am/Firefox_wallpaper.png 
